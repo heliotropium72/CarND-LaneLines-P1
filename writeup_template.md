@@ -44,11 +44,9 @@ In the following an example of the pipeline steps applied to the first test imag
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+- The parameters have to be tuned to a specific position of the camera. E.g. the region of interested is very sensible to rotation of the camera.
+- When only few strips are visible the slope of the lane is identified in an incorrect way.
+- The last video demonstrates that the pipeline cannot handle obscured parts of the image. E.g. in the last video is a part of the front hood of the car visible. Thus the intersections are calculated wrong.
 
 ### 3. Suggest possible improvements to your pipeline
 
